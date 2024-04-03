@@ -1,0 +1,18 @@
+[
+  {
+    "type": "com.ms.ioc.IMeeting",
+    "mapTo": "com.ms.ioc.Meeting",
+    "singleton": false,
+    "constructorArgs": {
+      "arguments": {
+        "name": "name",
+        "value": "Bespoke Meeting"
+      }
+    }
+  },
+  {
+    "type": "com.ms.ioc.IMeetingService",
+    "mapTo": "com.ms.ioc.MeetingService",
+    "singleton": false
+  }
+]

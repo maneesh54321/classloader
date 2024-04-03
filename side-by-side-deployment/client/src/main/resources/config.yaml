@@ -1,0 +1,2 @@
+factory.type=com.ms.cl.impl.NikonCameraFactory
+factory.location=file:///Users/maneesh/Work/classloader-tut/side-by-side-deployment/factories/out/artifacts/impl_jar/impl.jar
