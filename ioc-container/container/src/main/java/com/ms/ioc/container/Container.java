@@ -42,8 +42,9 @@ public class Container {
 			Bean bean = maybeBean.get();
 			try {
 				Class<?> beanClass = Class.forName(bean.getMapTo());
-				Optional<?> object = Arrays.stream(beanClass.getConstructors())
-						.max(Comparator.comparing(Constructor::getParameterCount))
+				Optional<Constructor<?>> longestConstructor = Arrays.stream(beanClass.getConstructors())
+						.max(Comparator.comparing(Constructor::getParameterCount));
+				Optional<?> object = longestConstructor
 						.map(constructor -> {
 							Class<?>[] parameterTypes = constructor.getParameterTypes();
 							Object[] args = new Object[parameterTypes.length];
