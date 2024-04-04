@@ -4,11 +4,12 @@ public class Meeting implements IMeeting{
 
 	private String[] attendees;
 
-	private String name;
+	private final String name;
 
 	private final IMeetingService meetingService;
 
-	public Meeting(IMeetingService meetingService) {
+	public Meeting(String name, IMeetingService meetingService) {
+		this.name = name;
 		this.meetingService = meetingService;
 	}
 
@@ -20,6 +21,10 @@ public class Meeting implements IMeeting{
 	@Override
 	public String[] getAttendees() {
 		return attendees;
+	}
+
+	public String getName() {
+		return name;
 	}
 
 	@Override

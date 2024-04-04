@@ -2,7 +2,7 @@ package com.ms.ioc;
 
 public class MeetingService implements IMeetingService {
 
-	private String[] attendees = {"Alice", "Bob", "Ram"};
+	private final String[] attendees = {"Alice", "Bob", "Ram"};
 
 	@Override
 	public String[] getAttendees() {

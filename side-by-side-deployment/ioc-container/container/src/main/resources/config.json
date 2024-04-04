@@ -4,10 +4,10 @@
     "mapTo": "com.ms.ioc.Meeting",
     "singleton": false,
     "constructorArgs": {
-      "arguments": {
+      "arguments": [{
         "name": "name",
         "value": "Bespoke Meeting"
-      }
+      }]
     }
   },
   {

@@ -1,4 +1,4 @@
-package com.ms.ioc;
+package com.ms.ioc.container;
 
 public class Bean {
 	private String type;
